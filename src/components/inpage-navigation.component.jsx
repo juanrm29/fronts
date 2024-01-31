@@ -8,7 +8,7 @@ const InPageNavigation = ({ routes, defaultHidden = [ ], defaultActiveIndex = 0,
     activeTabLineRef = useRef();
     activeTabRef = useRef();
 
-    let [ inPageNavIndex, setInPageNavIndex ] = useState(null);
+    let [ inPageNavIndex, setInPageNavIndex ] = useState(defaultActiveIndex);
 
     let [ isResizeEventAdded, setIsResizeEventAdded ] = useState(false);
     let [ width, setWidth ] = useState(window.innerWidth);
